@@ -1,0 +1,10 @@
+---
+- name: Playbook A
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Set variable for next Playbook
+      set_stats:
+        data:
+          test_var_playbook_a: "This is a variable value of playbook a"
+        per_host: no
